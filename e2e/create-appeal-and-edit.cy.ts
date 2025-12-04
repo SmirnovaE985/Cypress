@@ -3,7 +3,7 @@ describe('создание и редактирование обращения', 
     cy.visit('/', { onBeforeLoad: (win) => win.sessionStorage.clear() });
     cy.login();
   });
-
+// 
   // https://allure.itlabs.io/project/28/test-cases/5636?treeId=58
   it('#5636 Создание обращение клиента, который не зарегистрирован в ПЛ, но обращался на линию', () => {
     cy.createAppeal({ auth: { type: 'phone', value: '9199593297' } });
