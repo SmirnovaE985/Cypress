@@ -80,7 +80,7 @@ describe('Создание обращения', () => {
     cy.get('[data-test=select-appeal]').click();
     cy.contains('Новый заказ').click();
     cy.url().should('include', '/search');
-    cy.contains('Введите поисковой запрос').should('exist');
+    cy.contains('Поиск').should('exist');
     cy.contains('Укажите магазин').should('exist');
     cy.wait(1000);
     cy.visit('/home/appeal-history');
@@ -105,7 +105,7 @@ describe('Создание обращения', () => {
     cy.get('[data-test=select-appeal]').click();
     cy.contains('Консультация Материалы / Услуги').click();
     cy.url().should('include', '/search');
-    cy.contains('Введите поисковой запрос').should('exist');
+    cy.contains('Поиск').should('exist');
     cy.contains('Укажите магазин').should('exist');
     cy.wait(1000);
     cy.visit('/home/appeal-history');
